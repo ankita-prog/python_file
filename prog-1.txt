@@ -1,0 +1,14 @@
+"""lst1 = [89,12,44,55,67,100,125,23,77,189,21,27,50,75,60,91,80,181,261,300]
+   -count how many odd elements are there in the list
+   -sum all the 3 digits odd numbers
+   -find from position 10th position till end how many even numbers are there
+   -find in the FIRST half of the list how many numbers are divisible by 5 ONLY"""
+lst1 = [89,12,44,55,67,100,125,23,77,189,21,27,50,75,60,91,80,181,261,300]
+print('original list is ', lst1)
+lst_odd= list(filter (lambda a:(a%2==1), lst1))
+print('odd number list ', lst_odd)
+print('odd numbers are ' , len(lst_odd))
+lst_even_pos=list(filter (lambda a : (a%2==0), lst1))
+print('from postition 10 even numbers are ', lst_even_pos)
+lst_five= list(filter (lambda a:(a%5==0), lst1))
+print('applying the filter rule number divisible by 5 are ', (len(lst_five/2)))
